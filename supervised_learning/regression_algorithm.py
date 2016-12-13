@@ -10,4 +10,3 @@ df = quandl.get('WIKI/GOOGL')
 # df = df[['Adj. Close', 'HL_PCT', 'PCT_change', 'Adj. Volumn']]
 
 print (df.head())
-
