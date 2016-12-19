@@ -7,4 +7,4 @@ def getSum():
             sum += x
     return sum
 
-print getSum()
+print(getSum())
