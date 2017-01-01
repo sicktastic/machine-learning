@@ -8,6 +8,9 @@ vector = [1,3,2,1]
 #sum
 #1 + 6 + 2 + 5 = 14
 
+for x in len(matrix[0]):
+    print("Hello")
+
 #loop through second line
 #(0x1) + (3x3) + (0x2) + (4x1)
 #sum
