@@ -5,3 +5,10 @@ def mean():
 
 print(mean())
 
+def median():
+    numbers.sort()
+
+print(median())
+
+def mode():
+    numbers.sort()
