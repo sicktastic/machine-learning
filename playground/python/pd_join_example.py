@@ -18,10 +18,10 @@ def test_run():
             na_values = ['nan'])
 
     # Join the two dtaframes using DataFrame.join()
-    df1 = df1.join(dfSPY)
+    df1 = df1.join(dfSPY, how = "inner")
 
     # Drop NaN Values
-    df1 = df1.dropna()
+    # df1 = df1.dropna()
 
     print(df1)
 
