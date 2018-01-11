@@ -29,7 +29,7 @@ def get_data(symbols, dates):
 
 def test_run():
     # Define a date range
-    dates = pd.date_range('2010-01-22', '2010-01-26')
+    dates = pd.date_range('2010-01-01', '2010-12-31')
 
     # Choose stock symbols to read
     symbols = ['GOOG', 'IBM', 'GLD']
@@ -37,7 +37,11 @@ def test_run():
     # Get stock data
     df = get_data(symbols, dates)
 
-    print(df)
+    # print(df.ix['2010-01-01':'2010-01-31'])
+    # print(df['GOOG'])
+    # print(df[['IBM', 'GLD']])
+
+    print(df.ix['2010-03-10':'2010-03-15', ['SPY', 'IBM']])
 
 
 if __name__ == "__main__":
