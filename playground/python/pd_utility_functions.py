@@ -2,6 +2,7 @@
 
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
 
 def symbol_to_path(symbol, base_dir="../../datasets/stock/"):
     """ Returns CSV file path given ticker symbol """
@@ -26,6 +27,13 @@ def get_data(symbols, dates):
             df = df.dropna(subset = ['SPY'])
 
     return df
+
+def plot_data(df):
+    ''' Plot stock prices '''
+    ax = df.plot(title = title)
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Price")
+    plt.show()
 
 def test_run():
     # Define a date range
