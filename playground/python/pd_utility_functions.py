@@ -28,7 +28,7 @@ def get_data(symbols, dates):
 
     return df
 
-def plot_data(df):
+def plot_data(df, title="Stock prices", xlabel="Date", ylabel="Price"):
     ''' Plot stock prices '''
     ax = df.plot(title = title)
     ax.set_xlabel("Date")
