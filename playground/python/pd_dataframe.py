@@ -8,6 +8,7 @@ def get_max_close(symbol):
     Note: Data for a stock is stored in file: dataset/<symbol>.csv
     """
     df = pd.read_csv("../../datasets/{}.csv".format(symbol)) # read in data
+
     return df['Close'].max() # comput and return max
 
 def test_run():
