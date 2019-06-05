@@ -62,8 +62,7 @@ Temporary Items
 .idea/uiDesigner.xml
 
 # Gradle:
-.idea/gradle.xml
-.idea/libraries
+.idea/gradle.xml .idea/libraries
 
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
@@ -95,3 +94,7 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml 
 # *.ipr
+#
+
+# NODE
+tensorflow/node_modules
