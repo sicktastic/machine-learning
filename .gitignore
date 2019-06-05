@@ -97,4 +97,4 @@ fabric.properties
 #
 
 # NODE
-tensorflow/node_modules/*
+/tensorflow/node_modules/*
